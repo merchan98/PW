@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ES">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Borrar Gestor.-Base de datos multimedia</title>
+        <meta name="AUTOR" content="Fco Javier"/>
+        <!--Referencia a doc css-->
+        <link rel="stylesheet" type="text/css" href="./formatoborrar.css" />
+
+    </head>
+    <body>
+        <header id="SeccionArriba2">
+            <img src="./imagenes/libro abierto.png" alt="Logo de la Biblioteca" />
+            <h1>DigiBliblo Gestor</h1>
+            <!-- <p>Nombre de usuario</p> -->
+            <section id="GestionUsuarios">
+                <article id="NomUsua">
+                    <p>usuario</p>
+                </article>
+                <p class="tituloOpciones">Opciones Usuarios</p>
+                <article id="OpcUsuario">
+                    <p><a href="editargestor.html">Edicion</a></p>
+                    <p><a href="altagestor.html">Alta</a></p>
+                    <p><a href="borrargestor.html"> Borrado</a></p>
+                </article>
+            </section>
+        </header>
+        <section id="Centro" class="usuario">
+            <h1>Borrar Usuario</h1>
+            <form name="FormularioBorrarUsuario" action="BorrarUsuario.php" method="POST" >
+                <select name="Recursos" id="ListaRecursos"  size="30" required>
+                    <option value="1">Administrador</option>
+                    <option value="2">Usuario 1</option>
+                    <option value="3">Usuario 2</option>
+                    <option value="4">Usuario 3</option>
+                    
+                </select>
+                <article id="Botonera">
+                    <input type="submit" id="Enviar" value="Borrar">
+                </article>
+            </form>
+        </section>
+        <footer id="Partedeabajo">
+            <a href="./contacto.html">Contacto</a>
+            <a href="./como_se_hizo.pdf"> Como se hizo</a>
+        </footer>
+    </body>
+</html>

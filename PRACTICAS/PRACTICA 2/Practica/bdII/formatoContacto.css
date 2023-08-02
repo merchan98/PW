@@ -1,0 +1,125 @@
+/* Seccion de Arriba */
+    #SeccionArriba{
+        border-style: solid;
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(192, 252, 132);
+    }
+
+    #SeccionArriba img{
+        display: flex;
+        float: left;
+        height: 22%;
+        width: 12%;
+        max-width: 150px;
+        max-height: 300px;
+        margin: 2%;
+        background-color: rgb(190, 234, 255);
+        padding: 1%;
+
+    }
+
+    #SeccionArriba h1{
+        display: flex;
+        /* float: left; */
+        /* text-align: center; */
+        /* justify-self: center; */
+        justify-self: center;
+        margin: auto;
+        /* background: lightcoral; */
+        padding: auto;
+        font-size: 300%;
+    }
+/* FIN Seccion de Arriba */
+
+/* Centro */
+    #Centro{
+        display: flex;
+        /* justify-self: center; */
+        background-color: rgb(252, 193, 222);
+        /* flex-direction: column; */
+        /* margin: 5%; */
+        flex-direction: row;
+        
+    }
+    #CentroIzq{
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+    }
+    #CentroIzq h2{
+        display: flex;
+        /* justify-self: center; */
+        /* margin: auto; */
+        margin: 2% auto 1% auto;
+        /* margin-bottom: 1%;
+        margin-left: auto;
+        margin-right: auto; */
+    }
+
+    #CentroIzq form{
+        display: flex;
+        /* justify-self: center; */
+        flex-direction: column;
+        background-color: rgb(241, 236, 185);
+        margin: 2% auto 2% auto;
+        /* margin-top: 2%;
+        margin-bottom: 2%; */
+    }
+
+    #CentroIzq form input, textarea,label{
+        display: flex;
+        margin: 1% 2% 1% 2%;
+        /* background-color: lawngreen; */
+        font-size: large;
+    }
+
+    input[type="submit"]{
+        display: flex;
+        /* margin: 8%; */
+        background-color: lightblue;
+        /* justify-self: center; */
+        justify-content: center;
+    }
+
+    #CentroDrch{
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+    }
+    #CentroDrch ul{
+        /* display: flex; */
+        font-size: x-large;
+        /* flex-direction: column; */
+    }
+
+
+/* FIN Centro */
+
+/* Parte de abajo */
+    #Partedeabajo{
+        display: flex;
+        border-style: solid;
+        background-color: rgb(255, 201, 100);
+        /* text-align: center; */
+        justify-content: center;
+        font-size: x-large;
+        margin: auto;
+        padding: auto;
+    /*     margin-top: 1%;
+        justify-content: space-between;
+        margin-left: 26%;
+        margin-right: 26%;
+        padding: 1% 12%; */
+    }
+    #Partedeabajo a,
+    #Partedeabajo p{
+        /* display: flex; */
+        margin-left: 1%;
+        margin-right: 1%;
+        /* align-self: center; */
+        margin-top: auto;
+        margin-bottom: auto;
+        
+    }
+/* FIN Parte de abajo */

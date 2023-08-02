@@ -1,0 +1,195 @@
+/* Seccion de Arriba */
+#SeccionArriba{
+    border-style: solid;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(192, 252, 132);
+}
+
+#SeccionArriba img{
+    display: flex;
+    float: left;
+    height: 22%;
+    width: 12%;
+    max-width: 150px;
+    max-height: 300px;
+    margin: 2%;
+    background-color:rgb(190, 234, 255);
+    padding: 1%;
+
+}
+
+#SeccionArriba h1{
+    display: flex;
+    justify-self: center;
+    margin: auto;
+    /* background: lightcoral; */
+    padding: auto;
+    font-size: 300%;
+}
+    /* Gestion Usuarios */
+
+    #GestionUsuarios {
+        display: flex;
+        /* align-self: center; */
+        margin: 1%;
+        flex-direction: column;
+        width: 18%;
+        height: 18%;
+        max-width: 13em;
+        padding: 0.5em;
+        background-color: rgb(233, 199, 177);
+    }
+    #NomUsua {
+        display: flex;
+        margin: 0%;
+        padding: 0%;
+        border-style: dotted;
+        margin-left: 20%;
+        margin-right: 20%;
+        /* height: 5%; */
+        background-color: chocolate;
+    }
+
+    #NomUsua p{
+        display: flex;
+        margin: 0%;
+        margin-left: auto;
+        margin-right: auto;
+        /* width: 30%; */
+        font-size: 150%;
+        /* align-self: center; */
+    }
+    .BotonDesconectarse{
+        display: flex;
+        margin: 5%;
+        align-self: center;
+        /* background-color: aqua; */
+    }
+    .tituloOpciones {
+        display: flex;
+        margin-bottom: 0%;
+        margin-top: 10%;
+        margin-left: 20%;
+        /* background-color: chocolate; */
+    }
+    #OpcUsuario{
+        display: flex;
+        /* align-self: center; */
+        margin: auto;
+        /* background-color: blueviolet; */
+    }
+
+    #OpcUsuario p {
+        display: flex;
+        margin: 2%;
+    }
+/* FIN Gestion Usuarios */
+/* FIN Seccion de Arriba */
+
+/* Centro */
+
+#Centro{
+    display: flex;
+    border-style: groove;
+    margin: 2%;
+    flex-direction: column;
+    background-color: rgb(178, 217, 243);
+    padding: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 125%;
+}
+
+#Centro h2{
+    display: flex;
+    margin: auto;
+}
+
+#CentroArriba{
+    display: flex;
+    padding: 2%;
+    
+}
+#CentroArribaIzq{
+    display: flex;
+    border-style: groove;
+    /* margin: 2%; */
+    margin: auto;
+    align-self: center;
+    background-color: palegreen;
+    padding: 25px ;
+    
+}
+
+#CentroArribaDrcha{
+    display: flex;
+    /* border: groove; */
+    background-color: rgb(247, 207, 122);
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    width: 60%;
+    padding: 1%;
+}
+
+#CentroArribaDrcha article{
+    display: flex;
+    width: 75%;
+    padding: 1%;
+}
+#CentroArribaDrcha article input, select{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    font-size: 80%;
+}
+
+#CentroAbajo{
+    display: flex;
+    background-color: rgb(247, 207, 122);
+    width: auto;
+    margin: 2%;
+    flex-direction: column;
+
+}
+
+#Botonera{
+    float: right;
+    margin-right: 3%;
+    margin-bottom: 2%;
+    align-self: flex-end;
+    font-size: 100%;
+}
+#Botonera input{
+    font-size: 90%;
+}
+
+input[type="file"] {
+    /* height: 10em; */
+    opacity: 0;
+    width: 140px;
+    height: 65px;
+    position: absolute;
+    /* S */
+    left: 12%;
+    top: 37%;
+    /* width: 100%;  */
+    z-index: 3;
+}
+/* FIN Centro */
+
+/* Parte de abajo */
+#Partedeabajo{
+    display: flex;
+    border-style: solid;
+    background-color: rgb(255, 201, 100);
+    text-align: center;
+    font-size: x-large;
+    margin-top: 1%;
+    justify-content: space-between;
+    margin-left: 26%;
+    margin-right: 26%;
+    padding: 1% 12%;
+    
+}
+/* FIN Parte de abajo */

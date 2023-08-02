@@ -1,0 +1,143 @@
+#SeccionArriba{
+    border-style: solid;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(192, 252, 132);
+}
+
+#SeccionArriba img{
+    display: flex;
+    float: left;
+    height: 22%;
+    width: 12%;
+    max-width: 150px;
+    max-height: 300px;
+    margin: 2%;
+    background-color: rgb(190, 234, 255);
+    padding: 1%;
+
+}
+
+#SeccionArriba h1{
+    display: flex;
+    justify-self: center;
+    margin: auto;
+    /* background: lightcoral; */
+    padding: auto;
+    font-size: 300%;
+}
+
+#SeccionArriba form{
+    display: flex;
+    align-self: center;
+    margin: 1%;
+    flex-direction: column;
+    /* justify-content: center; */
+    
+}
+#SeccionArriba section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+
+
+#Centro{
+    display: flex;
+    background-color: lightpink;
+
+}
+
+#CentroIzquierda{
+    display: flex;
+    width: 43%;
+    border-right: groove rgb(0, 140, 255);
+}
+
+#CentroIzquierda img{
+    display: flex;
+    width: 90%;
+    height: 90%;
+    max-width: 30em;
+    margin: auto;
+    align-self: center;
+    
+}
+
+#CentroDerecha {
+    display: flex;
+    width: 65%;
+    background: lightskyblue;
+    flex-direction: column;
+    border-left: groove rgb(0, 140, 255);
+}
+
+#CentroDerecha h2{
+    display: flex;
+    justify-self: center;
+    /* margin: auto; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+    font-size: xx-large;
+    
+}
+
+#fila{
+    display: flex;
+    border-style: groove;
+    flex-direction: row;
+    background-color: moccasin;
+    margin: 1%;
+    margin-bottom: 2%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#fila img{
+    display: flex;
+    border-style: solid;
+    height: 42%;
+    width: 42%;
+    max-width: 130px;
+    max-height: 280px;
+    margin: 2%;
+    padding: 1%;
+    background-color: linen;
+}
+
+#fila p{
+    display: flex;
+    justify-content: end;
+    font-size: xx-large;
+    align-self: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Parte de abajo */
+#Partedeabajo{
+    display: flex;
+    border-style: solid;
+    background-color: rgb(255, 201, 100);
+    /* text-align: center; */
+    justify-content: center;
+    font-size: x-large;
+    margin: auto;
+    padding: auto;
+}
+#Partedeabajo a,
+#Partedeabajo p{
+    /* display: flex; */
+    margin-left: 1%;
+    margin-right: 1%;
+    /* align-self: center; */
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+
+/* FIN Parte de abajo */

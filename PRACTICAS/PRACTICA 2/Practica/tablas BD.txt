@@ -1,0 +1,63 @@
+$mensaje2 = mysqli_error($conexion);
+    printf("Errormessage: %s\n", mysqli_error($conexion));
+    echo "<script> alert ('$mensaje2 a') </script>";
+
+SHOW WARNINGS \G
+
+CREATE DATABASE db31032280_pw1920;
+
+CREATE TABLE TABLA_RECURSOS(
+	IDRecurso int NOT NULL UNIQUE AUTO_INCREMENT,
+	titulo varchar(30) UNIQUE NOT NULL,
+	genero ENUM('Action', 'Comedia', 'Suspense', 'Animacion') NOT NULL,
+	subGenero ENUM('Action', 'Comedia', 'Suspense', 'Animacion'),
+	anio varchar(10)NOT NULL,
+	duracion int NOT NULL,
+	nombreDirector varchar(40) NOT NULL,
+	pais enum('ESP', 'USA', 'FRA', 'UK', 'MX') NOT NULL,
+	protagonista varchar(40),
+	tipo enum('Audio', 'Video', 'Texto', 'Imagen') NOT NULL,
+	descripcion varchar(200),
+	archivo varchar(200) NOT NULL,
+	SeccionTitulo varchar(30),
+
+CONSTRAINT PK_recursos PRIMARY KEY (IDRecurso),
+CONSTRAINT FK_TituloSeccion FOREIGN KEY (SeccionTitulo) REFERENCES TABLA_SECCIONES(titulo),
+CONSTRAINT UNQ_tituloRecurso UNIQUE(titulo)
+);
+
+CREATE TABLE TABLA_SECCIONES(
+	IDSeccion int NOT NULL AUTO_INCREMENT,
+	titulo VarChar(30) UNIQUE NOT NULL,
+	descripcion varchar(200),
+	numeroRecursos int,
+	bibliotecaTitulo varchar(30),
+
+CONSTRAINT PK_seccion PRIMARY KEY (IDSeccion),
+CONSTRAINT FK_TituloBiblioteca FOREIGN KEY (bibliotecaTitulo) REFERENCES TABLA_BIBLIOTECAS(titulo),
+CONSTRAINT UNQ_tituloSeccion UNIQUE(titulo)
+);
+
+CREATE TABLE TABLA_BIBLIOTECAS(
+	IDBiblioteca int NOT NULL AUTO_INCREMENT,
+	titulo VarChar(30) UNIQUE NOT NULL,
+	descripcion varchar(200),
+	numeroSecciones int,
+	numeroRecursos int,
+	archivo varchar(200) NOT NULL,
+
+CONSTRAINT PK_biblioteca PRIMARY KEY (IDBiblioteca),
+CONSTRAINT UNQ_tituloBiblioteca UNIQUE(titulo)
+);
+
+CREATE TABLE TABLA_USUARIOS(
+	nombre varchar(50) NOT NULL,
+	apellidos varchar(70) NOT NULL,
+	usuario varchar(10) NOT NULL,
+	email varchar(70) NOT NULL,
+	pasword varchar(12) NOT NULL,
+CONSTRAINT PK_usuario PRIMARY KEY (usuario),
+CONSTRAINT UNQ_email UNIQUE (email)
+);	
+	
+	

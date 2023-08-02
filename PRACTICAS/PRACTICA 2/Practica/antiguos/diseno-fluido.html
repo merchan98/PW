@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Las imágenes fluidas</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8" />
+	<style>
+		h1, h2, h4, p, figure, img {
+			margin: 0;
+		}
+		#container {
+			width: 80%;
+			max-width: 1200px;
+			margin: 2% auto;
+		}
+		header, footer {
+			background-color: #000;
+			color: #fff;
+			text-align: center;
+		}
+		main {
+			background-color: #f9f9f9;
+		}
+		article, aside {
+			display: table-cell;
+			padding: 1.0416666667%; /* (10x100)/960=1,0416666667% */
+		}
+		article {
+			width: 37.3958333333%; /* (359x100)/960=37,3958333333% */
+			border-right: 1px solid #000;
+		}
+		aside {
+			width: 18.75%; /*(180x100)/960=18,75% */
+			background-color: #ddd;
+		}
+		figure {
+			width: 100%;
+		}
+		figure img {
+			max-width: 100%;
+		}
+		p ~ p, h4 ~ h4 {
+			margin-top: 20px;
+		}
+	</style>
+</head>
+<body>
+<div id="container">
+	<header>
+		<h1>Lorem ipsum dolor sit amet, consectetur adipisici elit amari</h1>
+	</header>
+	<main>
+		<article>
+			<h2>Prima luce cum quibus</h2>
+			<figure><img src="nutria.jpg" alt="Una nutria" /></figure>
+			<p>Magna pars studiorum, prodita quaerimus. Morbi fringilla convallis sapien, id pulvinar odio volutpat. Vivamus sagittis lacus vel augue laoreet rutrum faucibus. Pellentesque habitant morbi tristique senectus et netus. Nec dubitamus multa iter quae et nos invenerat. Cum sociis natoque penatibus et magnis dis parturient. Gallia est omnis divisa in partes tres, quarum. Curabitur blandit tempus ardua ridiculus sed magna. Prima luce, cum quibus mons aliud  consensu ab eo. Plura mihi bona sunt, inclinet, amari petere vellent.</p>
+			<p>Etiam habebis sem dicantur magna mollis euismod. At nos hinc posthac, sitientis piros Afros. Curabitur blandit tempus ardua ridiculus sed magna. Phasellus laoreet lorem vel dolor tempus vehicula. Fictum,  deserunt mollit anim laborum astutumque! Quid securi etiam tamquam eu fugiat nulla pariatur.</p>
+		</article>
+		<article>
+			<h2>Mons aliud consensu</h2>
+			<figure><img src="tigre.jpg" alt="Un tigre" /></figure>
+			<p>Curabitur blandit tempus ardua ridiculus sed magna. Gallia est omnis divisa in partes tres, quarum. Contra legem facit qui id facit quod lex prohibet. Plura mihi bona sunt, inclinet, amari petere vellent. Fabio vel iudice vincam, sunt in culpa qui officia. Ullamco laboris nisi ut aliquid ex ea commodi consequat. Quo usque tandem abutere, Catilina, patientia nostra? Quid securi etiam tamquam eu fugiat nulla pariatur. Quisque ut dolor gravida, placerat libero vel, euismod. Unam incolunt Belgae, aliam Aquitani, tertiam.</p>
+		</article>
+		<aside>
+			<h4>At nos hinc posthac</h4>
+			<p>Gallia est omnis divisa in partes tres, quarum. Curabitur blandit tempus ardua ridiculus sed magna. Prima luce, cum quibus mons aliud  consensu ab eo. Plura mihi bona sunt, inclinet, amari petere vellent. Etiam habebis sem dicantur magna mollis euismod.</p>
+			<h4>Plura mihi bona sunt</h4>
+			<p>Curabitur blandit tempus ardua ridiculus sed magna. Phasellus laoreet lorem vel dolor tempus vehicula. Fictum,  deserunt mollit anim laborum astutumque! Quid securi etiam tamquam eu fugiat nulla pariatur.</p>
+		</aside>
+	</main>
+	<footer>
+		<p>Curabitur est gravida et libero vitae dictum.</p>
+	</footer>
+</div>
+</body>
+</html>

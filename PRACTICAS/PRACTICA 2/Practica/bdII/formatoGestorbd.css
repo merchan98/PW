@@ -1,0 +1,219 @@
+/* Seccion de Arriba */
+    #SeccionArriba{
+        border-style: solid;
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(192, 252, 132);
+    }
+
+    #SeccionArriba img{
+        display: flex;
+        float: left;
+        height: 22%;
+        width: 12%;
+        max-width: 150px;
+        max-height: 300px;
+        margin: 2%;
+        background-color: rgb(190, 234, 255);
+        padding: 1%;
+
+    }
+
+    #SeccionArriba h1{
+        display: flex;
+        justify-self: center;
+        margin: auto;
+        /* background: lightcoral; */
+        padding: auto;
+        font-size: 300%;
+    }
+    /* Gestion Usuarios */
+
+        #GestionUsuarios {
+            display: flex;
+            /* align-self: center; */
+            margin: 1%;
+            flex-direction: column;
+            width: 18%;
+            height: 18%;
+            max-width: 13em;
+            padding: 0.5em;
+            background-color: rgb(233, 199, 177);
+        }
+        #NomUsua {
+            display: flex;
+            margin: 0%;
+            padding: 0%;
+            border-style: dotted;
+            margin-left: 20%;
+            margin-right: 20%;
+            /* height: 5%; */
+            background-color: chocolate;
+        }
+
+        #NomUsua p{
+            display: flex;
+            margin: 0%;
+            margin-left: auto;
+            margin-right: auto;
+            /* width: 30%; */
+            font-size: 150%;
+            /* align-self: center; */
+        }
+        .BotonDesconectarse{
+            display: flex;
+            margin: 5%;
+            align-self: center;
+            /* background-color: aqua; */
+        }
+        .tituloOpciones {
+            display: flex;
+            margin-bottom: 0%;
+            margin-top: 10%;
+            margin-left: 20%;
+            /* background-color: chocolate; */
+        }
+        #OpcUsuario{
+            display: flex;
+            /* align-self: center; */
+            margin: auto;
+            /* background-color: blueviolet; */
+        }
+
+        #OpcUsuario p {
+            display: flex;
+            margin: 2%;
+        }
+    /* FIN Gestion Usuarios */
+/* FIN Seccion de Arriba */
+
+/* Centro */
+
+    #Centro{
+        display: flex;
+        background-color: lightpink;
+        
+
+    }
+    /* Centro Izquierda */
+        #CentroIzquierda{
+            display: flex;
+            width: 43%;
+            /* background-color: lightgreen; */
+            border-right: groove rgb(0, 140, 255);
+        }
+
+        #CentroIzquierda a{
+            display: flex;
+            margin: auto;
+            /* align-self: center; */
+            font-size: 140%;
+        }
+
+    /* FIN Centro Izquierda */
+
+    #CentroDerecha {
+        display: flex;
+        width: 65%;
+        background: lightskyblue;
+        flex-direction: column;
+        /* justify-content: space-around; */
+        border-left: groove rgb(0, 140, 255);
+        
+    }
+
+    #CentroDerecha h2{
+        display: flex;
+        justify-content: center;
+        margin-top: 3%;
+        font-size: xx-large;
+        margin-bottom: 1%;
+        
+    }
+
+    /* Lista de bilbiotecas */
+        #ListaBibliotecas{
+            display: flex;
+            flex-direction: column;
+            overflow-y: scroll;
+
+            margin-top: 0.1em;
+            max-height: 45em;
+        }
+
+        #fila{
+            display: flex;
+            border-style: groove;
+            flex-direction: row;
+            background-color: moccasin;
+            margin: 1%;
+            margin-bottom: 2%;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto; 
+        }
+
+        #fila img{
+            display: flex;
+            border-style: solid;
+            height: 65%;
+            width: 65%;
+            max-width: 130px;
+            max-height: 280px;
+            align-self: center;
+            margin: 2%;
+            padding: 1%;
+            background-color: linen;
+        }
+
+        #filaDerecha{
+            display: flex;
+            flex-direction: column;
+            margin-right: 4%;
+            margin-left: auto;
+        }
+
+        #filaDerecha p{
+            display: flex;
+            /* justify-content: end; */
+            font-size: xx-large;
+            margin-bottom: auto;
+            margin-top: auto;
+        }
+
+        #OpcBiblio{
+            display: flex;
+            margin: 3em 5% 3% auto;
+        }
+
+        #OpcBiblio p{
+            display: flex;
+            /* float: left; */
+            font-size: medium;
+            /* background-color: cornflowerblue */;
+            margin: 2% 5% 3% 2%;
+        }
+    /* Lista de bilbiotecas */
+/* FIN Centro */
+
+/* Parte de abajo */
+#Partedeabajo{
+    display: flex;
+    border-style: solid;
+    background-color: rgb(255, 201, 100);
+    /* text-align: center; */
+    justify-content: center;
+    font-size: x-large;
+    margin: auto;
+    padding: auto;
+}
+#Partedeabajo a,
+#Partedeabajo p{
+    /* display: flex; */
+    margin-left: 1%;
+    margin-right: 1%;
+    /* align-self: center; */
+    margin-top: auto;
+    margin-bottom: auto;
+
+}

@@ -1,0 +1,15 @@
+p{
+    background-color: aqua;
+    color: blanchedalmond;
+    font-size: large;
+    text-decoration: brown;
+    text-align: center;
+}
+body{
+    background: #ffff11 url('ventanciaHolaMundo.png' )no-repeat right top;
+}
+a:link{color: coral; text-decoration: none;}
+a:visited{background-color: ;}
+ul{ list-style-image: url('./googlelogo_color_272x92dp.png');}
+ol.a{list-style-type: upper-roman;}
+ol.b{list-style-type: ;}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <title> Congreso Ejemplo</title>
+        <meta name="AUTHOR" content="Fco Javier">
+        <link rel ="stylesheet" type="text/css" href="./nuevoFormato.css" />
+            
+        
+        
+    </head>
+    <body>
+    <!-- Contenga una cabecera donde incluya el título y fecha del congreso (header) -->
+        <header>Congreso Ejemplo 20-03-2020</header>
+        <br>
+    <!-- Incluya una sección de contacto, vía correo electrónico (aside) -->
+        <section class="principio">
+            <h2>Contacto</h2>
+            <ul style="list-style-type:armenian;">
+                <li>Nombre: Soporte Congrsep</li>
+                <li>Email: <a href="mailto:soporte@congresoEjemplo.com">soporte&#x00040;congresoEjemplo.com</a></li>
+                <li>Telefono: <a href="tel:9658452618" >9658452618</a></li>
+            </ul>
+            
+        </section>
+        <!--<br><hr><br> -->
+    <!-- Aparezca una sección con una tabla con los diferentes precios del congreso (section) 
+        (para estudiantes, y profesionales y registro temprano, tardío y durante el congreso. -->
+        <section>
+           
+            <table border="1" summary="Lista de precio">
+                <caption><h2>Lista de plecios </h2></caption>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th >Estudiantes</th>
+                        <th>Profesionales</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Registro temprano*</th>
+                        <td> 4 &#x020AC; </td>
+                        <td> 6 &#x020AC; </td>
+                        
+                    </tr>
+                    <tr>
+                        <th>Entrada Normal</th>
+                        <td> 6 &#x020AC; </td>
+                        <td> 8 &#x020AC; </td>
+                    </tr>
+                    <tr>
+                        <th>Durante el congreso</th>
+                        <td> 7 &#x020AC; </td>
+                        <td> 9 &#x020AC; </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">*Hasta 2-1-2020</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+       <!-- <br><hr><br>-->
+    <!-- Albergue una sección donde se inserte el formulario de recogida de datos (section). -->
+        <section>
+            <h2>Formulario de incscripcion</h2>
+            <form method="POST">
+                <!--Datos personales-->
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                        <label for="Nombre">Nombre: </label>
+                        <input type="text" id="Nombre" name="Nombre"/>
+    
+                        <label for="Apellidos">Apellidos: </label>
+                        <input type="text" id="Apellidos" name="Apellidos"/>
+    
+                        <label for="Email">Email: </label>
+                        <input type="email" id="Email" name="name" />
+    
+                        <label for="Telefono">Tel&#x000E9;fono: </label>
+                        <input type="tel" id="Telefono" name="Telefono">
+    
+                        <label for="FechaNacimiento">Fecha de nacimiento</label>
+                        <input type="date" id="FechaNacimiento" name="FechaNacimiento" />
+    
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Datos del congreso</legend>
+                        <label for="NumAcompañates">Numero de acompa&#x000F1;antes</label>
+                        <input type="number" min="0" max="10" id="NumAcompañantes" name="NumAcompañantes" />
+                        
+                        <label for="PrimAsitencia">&#x000BF;Es tu primera asistencia&#x0003F;</label>
+                            <label for="Si">Si </label>
+                            <input type="radio" id="Si" name="PrimAsitencia" value="Si" checked />
+                            
+                            <label for="No">No </label>
+                            <input type="radio" id="No" name="PrimAsitencia" value="No" />
+                        
+                        <datalist id="listaConocimiento">
+                            <option value="Internet">Internet</option>
+                            <option value="Folletos">Folletos</option>
+                            <option value="Email">Email</option>
+                            <option value="Me lo conto un amigo">Me lo conto un amigo</option>
+                        </datalist>
+                        <label for="ComoConociste">&#x000BF;Como nos conocisteis&#x0003F;</label>
+                        <input type="text" id="ComoConociste" list="listaConocimiento"/>
+    
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Botones</legend>
+                    <input type="submit" id="botonEnviar" value="Enviar"/>
+                    <input type="reset" id="botonReiniciar" value="Resetear" />
+                </fieldset>
+    
+            </form>
+        </section>
+        <!-- <br><hr><br> -->
+    <!-- Tenga una sección con los organizadores del congreso (footer) -->
+        <footer>
+            <h3>Organiza</h3>
+            <ul style="list-style-type: georgian;">
+                <li>Ayuntamiendo de Ejemplo</li>
+                <li>Ministerio de cultura del gobierno del paisano</li>
+                <li>Ejemplistas S.A.</li>
+                <li>Bebidas "El paisano"</li>
+            </ul>
+        </footer>  
+
+    </body>
+
+
+
+</html>

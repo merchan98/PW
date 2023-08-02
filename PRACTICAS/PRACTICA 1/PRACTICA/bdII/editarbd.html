@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ES">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Editar DB .-Base de datos multimedia</title>
+        <meta name="AUTOR" content="Fco Javier"/>
+        <!--Referencia a doc css-->
+        <link rel="stylesheet" type="text/css" href="./formatoEditarbd.css" />
+
+    </head>
+    <body>
+        <header id="SeccionArriba">
+            <img src="./imagenes/libro abierto.png" alt="Logo de la Biblioteca" />
+            <h1>DigiBliblo Gestor</h1>
+            <!-- <p>Nombre de usuario</p> -->
+            <section id="GestionUsuarios">
+                <article id="NomUsua">
+                    <p>usuario</p>
+                </article>
+                <p class="tituloOpciones">Opciones Usuarios</p>
+                <article id="OpcUsuario">
+                    <p><a href="editargestor.html">Edicion</a></p>
+                    <p><a href="altagestor.html">Alta</a></p>
+                    <p><a href="borrargestor.html"> Borrado</a></p>
+                </article>
+            </section>
+        </header>
+        <section id="Centro">
+            <h2>Datos edicion Biblioteca Digital</h2>
+            <form name="FormularioRecurso" action="procesarRecurso.php" method="POST" >
+                <article id=CentroArriba>
+                    <section id="CentroArribaIzq">
+                        <label for="SubirArchivo">Subir Imagen </label>
+                        <input type="file" id="SubirArchivo" name="SubirArchivo" value="recurso"/>
+                    </section>
+                    <section id="CentroArribaDrcha">
+                        <article>
+                            <label for="titulo">Titulo: </label>
+                            <input type="text" id="titulo" value="Peliculas" name="titulo" required>
+                        </article>
+                        <article>
+                            <label for="titulo">Popietario: </label>
+                            <input type="text" id="titulo" value="Administrador" name="titulo" required>
+                        </article>
+                    </section> 
+                </article>
+                <article id="CentroAbajo">
+                    <label for="Descripcion">Descripcion: </label>
+                    <textarea id="Descripcion" name="message" rows="10" cols="50" required> En esta biblioteca digital encontraremos multitud de peliculas de los generos Accion, Animacion, Comedia y Suspense. ¡Disfruta concoiendo nuevos titulos!
+                    </textarea>
+                    <br>
+                    <label for="Descripcion">Informacion adicional: </label>
+                    <textarea id="Descripcion" name="message" rows="10" cols="50" required readonly>Numero de recursos: 3
+Fuentes:
+Autores:
+Y lo que se me ocurra</textarea>
+                </article>
+                <article id="Botonera">
+                    <input type="submit" id="Enviar" value="Enviar">
+                </article>
+                
+            </form>
+        </section>
+        <footer id="Partedeabajo">
+            <a href="./contacto.html">Contacto</a>
+            <a href="./como_se_hizo.pdf"> Como se hizo</a>
+        </footer>
+    </body>
+</html>

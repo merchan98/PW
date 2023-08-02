@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ES">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Alta recurso .-Base de datos multimedia</title>
+        <meta name="AUTOR" content="Fco Javier"/>
+        <!--Referencia a doc css-->
+        <link rel="stylesheet" type="text/css" href="./formatoAltaRecurso.css" />
+
+    </head>
+    <body>
+        <header id="SeccionArriba">
+            <img src="./imagenes/logoPelicula.png" alt="Logo de la Biblioteca" />
+            <h1>Peliculas</h1>
+            <p>Nombre de usuario</p>
+        </header>
+        <nav id="MenuSeleciones">
+            <ul>
+                <li><a href="#">Menu de Secciones</a>
+                    <ul>
+                        <li><a href="./recursosseccion1.html">Comedia</a></li>
+                        <li><a href="./recursosseccion1.html">Accion</a></li>
+                        <li><a href="./recursosseccion1.html">Suspense</a></li>
+                        <li><a href="./recursosseccion1.html">Animacion</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <section id=Centro>
+            <form name="FormularioRecurso" action="procesarRecurso.php" method="POST" >
+                <article id=CentroArriba>
+                    <section id="CentroArribaIzq">
+                        <label for="SubirArchivo">Subir Recurso </label>
+                        <input type="file" id="SubirArchivo" name="SubirArchivo" value="recurso" required>
+                        
+                    </section>
+                    <section id="CentroArribaDrcha">
+                        <article>
+                            <label for="titulo">Titulo: </label>
+                            <input type="text" id="titulo" name="titulo" required>
+                        </article>
+                        <article>
+                            <label for="Genero">Genero: </label>
+                            <select id = "Genero" required>
+                                <option value = "1">Action</option>
+                                <!-- <option value = "2">Aventura</option> -->
+                                <option value = "2">Comedia</option>
+                                <!-- <option value = "4">Drama</option>
+                                <option value = "5">Terror</option>
+                                <option value = "6">Musical</option>
+                                <option value = "7">Ciencia Ficiion</option>
+                                <option value = "8">Belica</option> -->
+                                <option value = "3">Suspense</option>
+                                <option value = "4">Animacion</option>
+                            </select>
+                        </article>
+                        <article>
+                            <label for="Subgenero">Subgenero: </label>
+                            <select id = "Subgenero" required >
+                                <option value = "1">Action</option>
+                                <!-- <option value = "2">Aventura</option> -->
+                                <option value = "2">Comedia</option>
+                                <!-- <option value = "4">Drama</option>
+                                <option value = "5">Terror</option>
+                                <option value = "6">Musical</option>
+                                <option value = "7">Ciencia Ficiion</option>
+                                <option value = "8">Belica</option> -->
+                                <option value = "3">Suspense</option>
+                                <option value = "4">Animacion</option>
+                            </select>
+                        </article>
+                        <article>
+                            <label for="Año">Fecha estreno: </label>
+                            <input type="date" id="Año" name="Año" required>
+                        </article>
+                        <article>
+                            <labe for="Duracion">Duracion: </labe>
+                            <input type="number" id="Duracion" name="Duracion" min="1" max="999" required>
+                        </article>
+                        <article>  
+                            <label for="NombreDirector">Director: </label>
+                            <input type="text" id="NombreDirector" name="NombreDirector" required>
+                        </article>
+                        <article>
+                            <label for="Pais" >Pais: </label>
+                            <select id = "Pais" required>
+                                <option value = "1">España</option>
+                                <option value = "2">EEUU</option>
+                                <option value = "3">Francia</option>
+                                <option value = "4">Reino Unido</option>
+                                <option value = "5">Mexico</option>
+                                <option value = "6">Japon</option>
+                                <option value = "7">Corea</option>
+                                <option value = "8">Canada</option>
+                                <option value = "9">Belgica</option>
+                                <option value = "10">Alemania</option>
+                            </select>
+                        </article>
+                        <article>
+                            <label for="Protagonista">Protagonista: </label>
+                            <input type="text" id="Protagonista" name="Protagonista" required>
+                        </article>
+                        <article>
+                            <label for="Tipo" >Tipo de archivo: </label>
+                            <select id = "Tipo" required>
+                                <option value = "1">Audio</option>
+                                <option value = "2">Vídeo</option>
+                                <option value = "3">Texto</option>
+                                <option value = "4">Imagen</option>
+                            </select>
+                        </article>
+                    </section> 
+                </article>
+                <article id="CentroAbajo">
+                    <label for="Descripcion">Descripcion: </label>
+                    
+                    <textarea id="Descripcion" name="message" rows="10" cols="50" required> </textarea>
+                </article>
+                <article id="Botonera">
+                    <input type="submit" id="Enviar" value="Enviar">
+
+                </article>
+            </form>
+
+        </section>
+        <footer id="Partedeabajo">
+            <a href="./contacto.html">Contacto</a>
+            <a href="./como_se_hizo.pdf"> Como se hizo</a>
+        </footer>
+    </body>
+</html>

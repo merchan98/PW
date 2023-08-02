@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title> Horario Clase</title>
+    </head>
+    <body>
+        <!-- Definicion de la tabla
+            Borde y sumario de la tabla-->
+        <table border="1" summmary="Esta tabla es el horario de 3º de clase">
+            <caption>Horario clases - caption</caption>
+            <!-- Filas de la cabecera-->
+            <thead>
+                <!-- Primera fila-->
+                <tr>
+                    <!-- 1º columnas y suesivas(cada th es una suva columna)-->
+                    <th> HORAS/DIAS</th>
+                    <th> Lunes- thead/tr/th</th>
+                    <th> Martes-thead/tr/th </th>
+                    <th> Miercoles- thead/tr/th</th>
+                    <th> Jueves- thead/tr/th</th>
+                    <th> Viernes- thead/tr/th</th>
+                </tr>
+                <!-- Segunda fila (no funciona como pensaba en el tbody los pone debajo no al ldado)
+                <tr><th> 15:30-16:30 - thead/2tr/th</th></tr>
+                <tr><th> 16:30-17:30 - thead/2tr/th</th></tr>
+                <tr><th> 17:30-18:30 - thead/2tr/th</th></tr>
+                <tr><th> 18:30-19:30 - thead/2tr/th</th></tr>-->
+            </thead>
+            <tbody>
+                <!--2º fila
+                <tr></tr>-->
+                <tr>
+                    <th> 15:30-16:30 - thead/2tr/th</th>
+                    <td>  </td>
+                    <td rowspan="2"> Practicas SIE  </td>
+                    <td rowspan="2"> Practicas PW </td>
+                    <td>  </td>
+                    <td rowspan="2"> Praticas ABD </td>
+                </tr>
+                <tr>
+                    <th> 16:30-17:30 - thead/2tr/th</th>
+                    <td>  </td>
+                    <!-- Aqui irian dos td pero como arriba hemos definicido qeu se juntan dos no se ponen-->
+                    <td>  </td>
+                    
+                </tr>
+                <tr>
+                    <th> 17:30-18:30 - thead/2tr/th</th>
+                    <td> Teoria PW </td>
+                    <td> Teoria PW </td>
+                    <td> Teoria SIE </td>
+                    <td rowspan="2"> Teoria ABD </td>
+                    <td>  </td>
+                </tr>
+                <tr>
+                    <th> 18:30-19:30 - thead/2tr/th</th>
+                    <td> Teoria SIE </td> 
+                    <td>  </td>
+                    <td>  </td>
+
+                    <td>  </td>
+
+                </tr>
+            </tbody>
+            <tfoot>
+                    <tr><td colspan="6"> FIN DEL Horario</td></tr>
+            </tfoot>
+        </table>
+    </body>
+</html>

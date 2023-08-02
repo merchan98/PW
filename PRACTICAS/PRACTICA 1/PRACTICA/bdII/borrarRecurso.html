@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ES">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Borrar recurso .-Base de datos multimedia</title>
+        <meta name="AUTOR" content="Fco Javier"/>
+        <!--Referencia a doc css-->
+        <link rel="stylesheet" type="text/css" href="./formatoborrar.css" />
+
+    </head>
+    <body>
+        <header id="SeccionArriba">
+            <img src="./imagenes/logoPelicula.png" alt="Logo de la Biblioteca" />
+            <h1>Peliculas</h1>
+            <p>Nombre de usuario</p>
+        </header>
+        <nav id="MenuSeleciones">
+            <ul>
+                <li><a href="#">Menu de Secciones</a>
+                    <ul>
+                        <li><a href="./recursosseccion1.html">Comedia</a></li>
+                        <li><a href="./recursosseccion1.html">Accion</a></li>
+                        <li><a href="./recursosseccion1.html">Suspense</a></li>
+                        <li><a href="./recursosseccion1.html">Animacion</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <section id="Centro" class="recurso">
+            <h1>Borrar Recurso</h1>
+            <form name="FormularioBorrarRecurso" action="BorrarRecurso.php" method="POST" >
+                <select name="Recursos" id="ListaRecursos"  size="25">
+                    <option value="1">Dando la nota</option>
+                    <option value="2">Dando la nota 2</option>
+                    <option value="3">Dando la nota 3</option>
+                    
+                </select>
+                <article id="Botonera">
+                    <input type="submit" id="Enviar" value="Borrar">
+                </article>
+            </form>
+        </section>
+        <footer id="Partedeabajo">
+            <a href="./contacto.html">Contacto</a>
+            <a href="./como_se_hizo.pdf"> Como se hizo</a>
+        </footer>
+    </body>
+</html>

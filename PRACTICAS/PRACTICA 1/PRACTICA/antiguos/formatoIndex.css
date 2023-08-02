@@ -1,0 +1,243 @@
+@media screen and (max-width:1024px) and (min-width:640px){
+    body{
+        /* background-color: cornflowerblue; */
+        border-style: double;
+        
+    }
+
+    section header{
+        /*align-items: center;
+        padding: 2%;
+        margin: auto;
+        width: 33%;
+        float: left;*/
+        display: flex;
+
+        background-color: darkgoldenrod;
+        border-style: groove;
+        text-align: center;
+        justify-content: center;
+        font-size: xx-large;
+        align-self: center;
+
+    }
+    hr{
+        background-color: darkgreen;
+        clear: both;
+    }
+
+    .formularioArriba img{
+    /* display: flexbox; 
+        padding: 2%;
+        margin: 2%;
+        width: 22%;
+        height: 22%;
+        float: left;width: 33%;
+        max-width: 200 px;
+        max-height: 100 px;*/
+        
+        
+        border-style: groove;
+        max-width: 33%;
+        max-height: 33%;
+        align-self: flex-start;
+        
+
+    }
+    .formularioArriba form{
+        /* display: flex;
+        width: 33%; margin: auto; padding: 3%;*/
+        
+        float: right;
+        border-style: groove;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        align-self: flex-end;
+    }
+    .formularioArriba {
+        /* float: inline-start;*/
+        display: flex;
+    border-style: groove;
+    justify-content: space-between ;
+        padding: 1%;
+        margin: 1%;
+        clear: both;
+        
+    }
+    .Centro{
+        display: flex;
+        flex-direction: row;
+        justify-content: baseline;
+        width: 100%;
+    }
+    .columnaIzq article{
+        display: flex;
+        flex-direction: row;
+        border-style: groove;
+        margin: 2% 5%;
+        justify-content: space-between;
+    }
+    .columnaIzq article a{
+        display: flex;
+        align-self: center;
+        margin-right: 10%;
+    }
+
+    .columnaIzq article img{
+        display: flex;
+        /*margin-right: 10%;
+        margin-bottom: 5%;
+        margin: 5% 5%;
+        align-self: flex-end;*/
+
+    }
+    .columnaIzq{
+        display: flex;
+        width: 45%;
+        /*float: right;*/
+        flex-direction: column;
+        padding-left: 2%;
+        border-left: 5px groove darksalmon;
+        
+    }
+    .columnaDerch{
+        display: flex;
+        /*width: 45%;
+        float: inline-start;*/
+        align-self: flex-start;
+        border-right: 5px groove rgb(30, 141, 95);
+        max-width: 45%;
+        max-height: 45%;
+    }
+    .Partedeabajo{
+        clear: both;
+        border-style: double;
+        background-color: rgb(228, 185, 46);
+        text-align: center;
+        font-size: x-large;
+        margin-top: 1%;
+    }
+}
+@media screen and (min-width:1024px) {
+    body{
+        /* background-color: cornflowerblue; */
+        border-style: double;
+        
+    }
+    
+    section header{
+        /*align-items: center;
+        padding: 2%;
+        margin: auto;
+        width: 33%;
+        float: left;*/
+        display: flex;
+    
+        background-color: fuchsia;
+        border-style: groove;
+        text-align: center;
+        justify-content: center;
+        font-size: xx-large;
+        align-self: center;
+    
+    }
+    hr{
+        background-color: darkgreen;
+        clear: both;
+    }
+    
+    .formularioArriba img{
+       /* display: flexbox; 
+        padding: 2%;
+        margin: 2%;
+        width: 22%;
+        height: 22%;
+        float: left;width: 33%;
+        max-width: 200 px;
+        max-height: 100 px;*/
+        
+        
+        border-style: groove;
+        max-width: 33%;
+        max-height: 33%;
+        align-self: flex-start;
+        
+    
+    }
+    .formularioArriba form{
+        /* display: flex;
+        width: 33%; margin: auto; padding: 3%;*/
+        
+        float: right;
+        border-style: groove;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        align-self: flex-end;
+    }
+    .formularioArriba {
+        /* float: inline-start;*/
+        display: flex;
+       border-style: groove;
+       justify-content: space-between ;
+        padding: 1%;
+        margin: 1%;
+        clear: both;
+        
+    }
+    .Centro{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+    .columnaIzq article{
+        display: flex;
+        width: 70%;
+        flex-direction: row;
+        border-style: groove;
+        margin: 2% 5%;    
+        justify-content: space-between;
+    }
+
+    .columnaIzq article a{
+        display: flex;
+        align-self: center;
+        margin-right: 10%;
+    }
+    .columnaIzq article img{
+        display: flex;
+        /*margin-right: 10%;
+        margin-bottom: 5%;
+        margin: 5% 5%;*/
+        align-self: flex-start;
+    
+    }
+    .columnaIzq{
+        display: flex;
+        width: 45%;
+        /*float: right;*/
+        flex-direction: column;
+        padding-left: 2%;
+        border-left: 5px groove darksalmon;
+        
+    }
+    .columnaDerch{
+        display: flex;
+        /*width: 45%;
+        float: inline-start;*/
+        align-self: flex-start;
+        border-right: 5px groove rgb(30, 141, 95);
+        max-width: 45%;
+        max-height: 45%;
+    }
+    .Partedeabajo{
+        clear: both;
+        border-style: double;
+        background-color: rgb(228, 185, 46);
+        text-align: center;
+        font-size: x-large;
+        margin-top: 1%;
+    }
+  }

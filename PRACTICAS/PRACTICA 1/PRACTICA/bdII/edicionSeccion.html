@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ES">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Editar Seccion.-Base de datos multimedia</title>
+        <meta name="AUTOR" content="Fco Javier"/>
+        <!--Referencia a doc css-->
+        <link rel="stylesheet" type="text/css" href="./formatoAltaSeecion.css" />
+
+    </head>
+    <body>
+        <header id="SeccionArriba">
+            <img src="./imagenes/logoPelicula.png" alt="Logo de la Biblioteca" />
+            <h1>Peliculas</h1>
+            <p>Nombre de usuario</p>
+        </header>
+        <nav id="MenuSeleciones">
+            <ul>
+                <li><a href="#">Menu de Secciones</a>
+                    <ul>
+                        <li><a href="./recursosseccion1.html">Comedia</a></li>
+                        <li><a href="./recursosseccion1.html">Accion</a></li>
+                        <li><a href="./recursosseccion1.html">Suspense</a></li>
+                        <li><a href="./recursosseccion1.html">Animacion</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <section id="Centro">
+            <h2>Datos edicion Seccion</h2>
+            <form name="FormularioeditarSeccion" action="procesaredicionRecurso.php" method="POST" >
+                <article id=CentroArriba>
+                    <section id="CentroArribaIzq">
+                        <label for="SubirArchivo">Subir Imagen </label>
+                        <input type="file" id="SubirArchivo" name="SubirArchivo" value="recurso"/>
+                        
+                    </section>
+                    <section id="CentroArribaDrcha">
+                        <article>
+                            <label for="titulo">Titulo: </label>
+                            <input type="text" id="titulo" value="Accion" name="titulo" required>
+                        </article>
+                        
+                    </section> 
+                </article>
+                <article id="CentroAbajo">
+                    <label for="Descripcion">Descripcion: </label>
+                    <textarea id="Descripcion" name="message" rows="10" cols="50" required>Peliculas de accion </textarea>
+                </article>
+                <article id="Botonera">
+                    <input type="submit" id="Enviar" value="Enviar">
+                </article>
+                
+            </form>
+        </section>
+        <footer id="Partedeabajo">
+            <a href="./contacto.html">Contacto</a>
+            <a href="./como_se_hizo.pdf"> Como se hizo</a>
+        </footer>
+    </body>
+</html>

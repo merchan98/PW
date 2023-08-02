@@ -1,0 +1,218 @@
+#SeccionArriba{
+    border-style: solid;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(158, 231, 255);
+    margin-bottom: 1%;
+}
+
+#SeccionArriba img{
+    display: flex;
+    float: left;
+    height: 22%;
+    width: 12%;
+    max-width: 150px;
+    max-height: 300px;
+    margin-left: 2%;
+
+}
+
+#SeccionArriba h1{
+    display: flex;
+    float: left;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 260%;
+}
+
+#SeccionArriba p{
+    display: flex;
+    align-self: flex-start;
+    margin: 1%;
+}
+
+/* MENÚ desplegable */
+    #MenuSeleciones ul{
+        list-style: none;
+        margin-top: 0%;
+        padding: 0%;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    /* items del menu */
+    #MenuSeleciones ul li{
+        background-color: pink;
+        
+        
+    }
+    /* enlaces del menu */
+    #MenuSeleciones ul a{
+        display: block;
+        color: rgb(78, 48, 7);;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: medium;
+        padding: 10px 80px;
+        letter-spacing: 1px;
+    }
+
+    /* items del menu */
+    #MenuSeleciones ul li{
+        position: relative;
+        float: center;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    /* efecto al pasar el ratón por los items del menu */
+    #MenuSeleciones ul li:hover{
+        background: #bdd0ee;
+    }
+    /* menu desplegable */
+    #MenuSeleciones ul ul{
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: #eee;
+        padding: 0%;
+    }
+    /* items del menu desplegable */
+    #MenuSeleciones ul ul li{
+        float: none;
+        width: 300px;
+    }
+
+    /* enlaces de los items del menu desplegable */
+    #MenuSeleciones ul ul a{
+        line-height: 120%;
+        padding: 10px 16px;
+    }
+
+    /* items del menu desplegable al pasar el ratón */
+    #MenuSeleciones ul li:hover > ul{
+        display: block;
+    }
+    
+/* FIN MENÚ desplegable */
+
+/* Parte de abajo */
+#Partedeabajo{
+    display: flex;
+    border-style: solid;
+    background-color: rgb(255, 201, 100);
+    text-align: center;
+    font-size: x-large;
+    margin-top: 1%;
+    justify-content: space-between;
+    margin-left: 26%;
+    margin-right: 26%;
+    padding: 1% 12%;
+    
+}
+/* FIN Parte de abajo */
+
+/* Centro */
+
+#Centro{
+    display: flex;
+    border-style: groove;
+    margin: 2%;
+    flex-direction: column;
+    background-color: rgb(240, 197, 140);
+    /* align-self: center; */
+    padding: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 125%;
+}
+
+#CentroArriba{
+    display: flex;
+    padding: 2%;
+    
+}
+#CentroArribaIzq{
+    display: flex;
+    border-style: groove;
+    /* margin: 2%; */
+    margin: auto;
+    align-self: center;
+    background-color: palegreen;
+    padding: 25px ;
+    
+}
+
+#CentroArribaDrcha{
+    display: flex;
+    /* border: groove; */
+    
+    background-color: rgb(241, 212, 149);
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    width: 60%;
+    padding: 1%;
+}
+select:disabled{
+    color: black;
+
+}
+/* Desavilitacion del fromulacio */
+
+/*FIN Desavilitacion del fromulacio */
+#CentroArribaDrcha article{
+    display: flex;
+    width: 75%;
+    padding: 1%;
+}
+#CentroArribaDrcha article input, select{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    font-size: 80%;
+}
+
+#CentroAbajo{
+    display: flex;
+    background-color: rgb(241, 212, 149);
+    width: auto;
+    margin: 2%;
+    flex-direction: column;
+
+}
+
+#CentroAbajo label{
+    margin-left: 2%;
+}
+#CentroAbajo textarea{
+    text-align: justify;
+    font-size: large;
+}
+
+#Botonera{
+    clear: both;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-bottom: 2%;
+    align-self: flex-end;
+    font-size: 100%;
+    width: 95%;
+}
+#Botonera a{
+    padding: 2%;
+}
+
+input[type="file"] {
+    opacity: 0;
+    width: 160px;
+    height: 60px;
+    position: absolute;
+    left: 12%;
+    top: 48%;
+    z-index: 3;
+}

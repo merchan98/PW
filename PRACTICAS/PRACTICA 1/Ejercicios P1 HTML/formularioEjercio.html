@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <form method="POST">
+            <!--Datos personales-->
+            <fieldset>
+                <legend>Datos Personales</legend>
+                    <label for="Nombre">Nombre: </label>
+                    <input type="text" id="Nombre" name="Nombre"/>
+
+                    <label for="Apellidos">Apellidos: </label>
+                    <input type="text" id="Apellidos" name="Apellidos"/>
+
+                    <label for="Email">Correo electronico: </label>
+                    <input type="email" id="Email" name="name" />
+
+                    <label for="Telefono">Tel&#x000E9;fono: </label>
+                    <input type="tel" id="Telefono" name="Telefono">
+
+                    <label for="FechaNacimiento">Fecha de nacimiento</label>
+                    <input type="date" id="FechaNacimiento" name="FechaNacimiento" />
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos del congreso</legend>
+                    <label for="NumAcompañates">Numero de acompa&#x000F1;antes</label>
+                    <input type="number" min="0" max="10" id="NumAcompañantes" name="NumAcompañantes" />
+                    
+                    <label for="PrimAsitencia">&#x000BF;Es tu primera asistencia&#x0003F;</label>
+                        <label for="Si">Si </label>
+                        <input type="radio" id="Si" name="PrimAsitencia" value="Si" checked />
+                        
+                        <label for="No">No </label>
+                        <input type="radio" id="No" name="PrimAsitencia" value="No" />
+                    
+                    <datalist id="listaConocimiento">
+                        <option value="Internet">Internet</option>
+                        <option value="Folletos">Folletos</option>
+                        <option value="Email">Email</option>
+                        <option value="Me lo conto un amigo">Me lo conto un amigo</option>
+                    </datalist>
+                    <label for="ComoConociste">&#x000BF;Como nos conocisteis&#x0003F;</label>
+                    <input type="text" id="ComoConociste" list="listaConocimiento"/>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Botones</legend>
+                <input type="submit" id="botonEnviar" value="Enviar"/>
+                <input type="reset" id="botonReiniciar" value="Resetear" />
+            </fieldset>
+
+        </form>
+
+
+    </body>
+</html>
+<!-- Albergue una sección donde se inserte el formulario de recogida de datos (section).
+- Los datos que se deberán tomar del usuario son los siguientes: 
+    nombre, --
+    apellidos, --
+    correo electrónico,--
+    teléfono, --
+    fecha de nacimiento, --
+    número de acompañantes, --
+    ¿es tu primera asistencia al congreso?(radiobutton), --
+    ¿cómo conociste el evento? (input + datalist), --
+    botón para registrarse y para resetear el formulario. -- -->

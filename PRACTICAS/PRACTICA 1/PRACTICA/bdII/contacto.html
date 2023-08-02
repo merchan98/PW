@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ES">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Contactos-Base de datos multimedia</title>
+        <meta name="AUTOR" content="Fco Javier"/>
+        <!--Referencia a doc css-->
+        <link rel="stylesheet" type="text/css" href="./formatoContacto.css" />
+
+    </head>
+    <body>
+        <header id="SeccionArriba">
+            <img src="./imagenes/libro abierto.png" alt="Logo de la Biblioteca" />
+            <h1>DigiBliblo Gestor</h1>
+        </header>
+        <section id="Centro">
+            <article id="CentroIzq">
+                <h2>Formulario de contacto</h2>
+                <form action="mailto:franmerchan6@correo.ugr.es" method="POST" name="Inicio de sesion" enctype="text/plain">
+                    <label for="Nombre">Nombre: </label>
+                    <input type="text" id="Nombre" name="Nombre" required/>
+                    <label for="Email">Correo electronico: </label>
+                    <input type="email" id="Email" name="Email" required/> 
+                    <label for="Descripcion">  Motivo: </label>  
+                    <textarea id="Descripcion" name="message" rows="7" cols="50" required>
+                    </textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+            </article>
+            <article id="CentroDrch">
+                <h2>Informacion de contacto</h2>
+                <ul>
+                    <li>Nombre: Fco Javier</li>
+                    <li>Apellidos: Merchán Martín</li>
+                    <li>Email: <a href="mailto:soporte@congresoEjemplo.com">franmerchan6@correo.ugr.es</a></li>
+                    <li>Telefono: <a href="tel:9658452618">9658452618</a></li>
+                </ul>
+            </article>
+            
+        </section>
+        <footer id="Partedeabajo">
+            <!-- <p> -->
+            <a href="./contacto.html">Contacto</a>
+            <p>-</p>
+            <a href="./como_se_hizo.pdf"> Como se hizo</a>
+            <!-- </p> -->
+        </footer>
+    </body>
+</html>
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ES">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Crear BD.-Base de datos multimedia </title>
+        <meta name="AUTOR" content="Fco Javier"/>
+        <!--Referencia a doc css-->
+        <link rel="stylesheet" type="text/css" href="./formatoCrearbd.css" />
+
+    </head>
+    <body>
+        <header id="SeccionArriba">
+            <img src="./imagenes/libro abierto.png" alt="Logo de la Biblioteca" />
+            <h1>DigiBliblo Gestor</h1>
+            <!-- <p>Nombre de usuario</p> -->
+            <section id="GestionUsuarios">
+                <article id="NomUsua">
+                    <p>usuario</p>
+                </article>
+                <p class="tituloOpciones">Opciones Usuarios</p>
+                <article id="OpcUsuario">
+                    <p><a href="editargestor.html">Edicion</a></p>
+                    <p><a href="altagestor.html">Alta</a></p>
+                    <p><a href="borrargestor.html"> Borrado</a></p>
+                </article>
+            </section>
+        </header>
+        <section id="Centro">
+            <h2>Datos alta Biblioteca Digital</h2>
+            <form name="FormularioRecurso" action="procesarRecurso.php" method="POST" >
+                <article id=CentroArriba>
+                    <section id="CentroArribaIzq">
+                        <label for="SubirArchivo">Subir Imagen </label>
+                        <input type="file" id="SubirArchivo" name="SubirArchivo" value="recurso" required/>
+                    </section>
+                    <section id="CentroArribaDrcha">
+                        <article>
+                            <label for="titulo">Titulo: </label>
+                            <input type="text" id="titulo" name="titulo" required>
+                        </article>
+                    </section> 
+                </article>
+                <article id="CentroAbajo">
+                    <label for="Descripcion">Descripcion: </label>
+                    <textarea id="Descripcion" name="message" rows="10" cols="50" required> </textarea>
+                </article>
+                <article id="Botonera">
+                    <input type="submit" id="Enviar" value="Enviar">
+                </article>
+                
+            </form>
+        </section>
+        <footer id="Partedeabajo">
+            <a href="./contacto.html">Contacto</a>
+            <a href="./como_se_hizo.pdf"> Como se hizo</a>
+        </footer>
+    </body>
+</html>

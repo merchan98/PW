@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ES">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Borrar Biblioteca .-Base de datos multimedia</title>
+        <meta name="AUTOR" content="Fco Javier"/>
+        <!--Referencia a doc css-->
+        <link rel="stylesheet" type="text/css" href="./formatoborrar.css" />
+    </head>
+    <body>
+        <header id="SeccionArriba2">
+            <img src="./imagenes/libro abierto.png" alt="Logo de la Biblioteca" />
+            <h1>DigiBliblo Gestor</h1>
+            <!-- <p>Nombre de usuario</p> -->
+            <section id="GestionUsuarios">
+                <article id="NomUsua">
+                    <p>usuario</p>
+                </article>
+                <p class="tituloOpciones">Opciones Usuarios</p>
+                <article id="OpcUsuario">
+                    <p><a href="editargestor.html">Edicion</a></p>
+                    <p><a href="altagestor.html">Alta</a></p>
+                    <p><a href="borrargestor.html"> Borrado</a></p>
+                </article>
+            </section>
+        </header>
+        <section id="Centro" class="basededatos">
+            <h1>Borrar Base de datos</h1>
+            <form name="FormularioBorrarUsuario" action="BorrarUsuario.php" method="POST" >
+                <select name="Recursos" id="ListaRecursos"  size="25">
+                    <option value="1">Peliculas</option>
+                    <option value="2">Series</option>
+                    <option value="3">Documentales</option>
+                    
+                </select>
+                <article id="Botonera">
+                    <input type="submit" id="Enviar" value="Borrar">
+                </article>
+            </form>
+        </section>
+        <footer id="Partedeabajo">
+            <a href="./contacto.html">Contacto</a>
+            <a href="./como_se_hizo.pdf"> Como se hizo</a>
+        </footer>
+    </body>
+</html>
